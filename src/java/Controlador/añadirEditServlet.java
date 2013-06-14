@@ -116,7 +116,7 @@ public class añadirEditServlet extends HttpServlet {
                 edits.add(item);
                 
                 request.setAttribute("editItem", item);
-                RequestDispatcher view= request.getRequestDispatcher("/SucesoEdi.jsp");
+                RequestDispatcher view= request.getRequestDispatcher("/SucesoEdit.jsp");
                 //RequestDispatcher view=request.getRequestDispatcher("/SucesoEdit.jsp");
                 view.forward(request, response);
             }catch(RuntimeException e){

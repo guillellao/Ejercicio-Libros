@@ -15,16 +15,17 @@
         <title>Listado de Libros</title>
     </head>
     <body>
-        <H1>Listado Libros</H1>
         <%ServletContext context= getServletContext();
         List libros=(List)context.getAttribute("LibroList");
             %>
-        
+        <h3>Actualmente tiene<b><%= libros.size() %></b> LIBROS  en su coleccion<br><br><br></h3>
         
         <table border='4' cellspacing='0' cellpadding='5'>
            <tr>
               <th>TITULO</th>
-<th>GENERO</th>
+              <th>AUTOR</th>
+              <th>GENERO</th>
+              <th>AÑO</th>
               <th>VALOR</th>
            </tr>
 
@@ -33,8 +34,9 @@
                 Libro item = (Libro) it.next();%>
                 <tr>
                     <td><%=item.getTitulo() %></td>
-                
-                    <td><%=item.getGenero() %></td>
+                    <td><%=item.getAutor()%></td>
+                    <td><%=item.getGenero()%></td>
+                    <td><%=item.getAgno()%></td>
                     <td><%=item.getValor()%></td>
                 </tr>
             <%

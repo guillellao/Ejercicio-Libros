@@ -14,10 +14,10 @@
     <body>
         <h1>Aplicaci&oacute;n Librer&iacute;a</h1>
         <ul>
+            <li><a href="ListadoLibro.jsp">Listado Libros</a></li>
+            <li><a href="ListadoEdit.jsp">Listado Editoriales</a></li>
             <li><a href="FormularioLib.jsp">Agregar un libro a la colecci&oacute;n</a></li>
             <li><a href="FormularioEdit.jsp">Agregar una editorial a la colecci&oacute;n</a></li>
-            <li><a href="ListadoLibro.jsp">Listado Libros</a></li>
-            <li><a href="ListadoEdit">Listado Editoriales</a></li>
         </ul>
         
     </body>

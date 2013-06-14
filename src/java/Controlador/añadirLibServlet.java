@@ -84,7 +84,7 @@ public class añadirLibServlet extends HttpServlet {
        // processRequest(request, response);
         
         List errorMsgs= new LinkedList();
-        //String valor="";
+        int valor=0;
         //recupero parametros del formulario
         try{
             
@@ -92,23 +92,17 @@ public class añadirLibServlet extends HttpServlet {
         String autor= request.getParameter("autor");
         String genero= request.getParameter("nuevoGenero");
         String agno=request.getParameter("agno");
-        String valor=request.getParameter("valor");
         
-                if(valor==null||valor.trim().length()==0){
-            errorMsgs.add("Por favor debe ingresar el campo valor");
-        }
-        /*try{
+        try{
             valor= Integer.parseInt(request.getParameter("valor"));
         }catch(NumberFormatException e){
             errorMsgs.add("En el campo valor debe ingresar un número.");
-        }*/
+        }
         if((genero==null)||(genero.trim().length()==0)){
             genero=request.getParameter("genero");
             
         }
         //verificacion formulario
-
-        
         if(titulo==null||titulo.trim().length()==0){
             errorMsgs.add("Por favor debe ingresar titulo del libro");
         }

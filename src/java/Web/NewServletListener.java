@@ -20,9 +20,9 @@ public class NewServletListener implements ServletContextListener {
     @Override
     public void contextInitialized(ServletContextEvent sce) {
         ArrayList libros = new ArrayList();
-        libros.add(new Libro("Papeluho","Maecela Paz","Infantil","1980","5000"));
-        libros.add(new Libro("Holaaa","Juan","Drama","2000","10000"));
-        libros.add(new Libro("Chaooo","Pedro","Acción","2005","20000"));
+        libros.add(new Libro("Papeluho","Maecela Paz","Infantil","1980",5000));
+        libros.add(new Libro("Holaaa","Juan","Drama","2000",10000));
+        libros.add(new Libro("Chaooo","Pedro","Acción","2005",20000));
         
         ServletContext context=sce.getServletContext();
         context.setAttribute("LibroList", libros);

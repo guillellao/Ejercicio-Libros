@@ -14,9 +14,9 @@ public class Libro {
     private String autor;
     private String genero;
     private String agno;
-    private String valor;
+    private int valor;
 
-    public Libro(String titulo, String autor, String genero, String agno, String valor) {
+    public Libro(String titulo, String autor, String genero, String agno, int valor) {
         this.titulo = titulo;
         this.autor = autor;
         this.genero = genero;
@@ -40,11 +40,9 @@ public class Libro {
         return agno;
     }
 
-    public String getValor() {
+    public int getValor() {
         return valor;
     }
-
-    
     
     
     

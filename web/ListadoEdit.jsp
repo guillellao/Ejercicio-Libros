@@ -20,7 +20,7 @@
         <% ServletContext context= getServletContext();
         List edits=(List) context.getAttribute("editList");%>
         
-        
+        <h2>Actualmente tiene &nbsp <%=edits.size()%> en la lista</h2>
         
         <table border='3'>
             <tr>
